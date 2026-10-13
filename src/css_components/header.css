@@ -1,0 +1,41 @@
+
+
+header {
+ display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px 20px;
+  background-color: #211878;
+}
+
+h1{
+    color: #a855f7;
+  font-size: 48px;
+  margin: 0;
+  white-space: nowrap;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+
+
+nav ul {
+  
+  display: inline-block;
+  padding: 10px 14px;
+  color: white;
+  background-color: #5145cd;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: transparent;
+}

@@ -1,13 +1,13 @@
 
 import "../css_components/header.css"
 import { Link } from "react-router-dom";
+import logo from "../assets/react.svg"
 
 function Header() {
     return (
         <header>
             <div className="logo">
-                {/*Aqu[i agregaremos la imagen*/}
-
+                <img src={logo} alt="Logo" />
                 <h1>IphoneApple</h1>    
             </div>
 
