@@ -1,6 +1,6 @@
 
 
-import "../css_components/header.css"
+import "../css_components/footer.css"
 function Footer() {
     return (
         <footer>
