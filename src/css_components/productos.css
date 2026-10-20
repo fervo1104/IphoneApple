@@ -1,0 +1,79 @@
+.productos {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 24px 32px 48px;
+}
+
+.productos > h1 {
+    margin: 0 0 28px;
+    color: #355c7d;
+    font-size: 36px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.produclista {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 360px));
+    justify-content: center;
+    gap: 24px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.card {
+    overflow: hidden;
+    border: 1px solid #e5e4e7;
+    border-radius: 8px;
+    background-color: #fff;
+    text-align: left;
+    box-shadow: 0 4px 14px rgb(53 92 125 / 10%);
+    transition: transform 180ms ease, box-shadow 180ms ease;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 22px rgb(53 92 125 / 16%);
+}
+
+.cardimg {
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    padding: 18px;
+    object-fit: contain;
+    background-color: #f3f5f6;
+}
+
+.cardcont {
+    padding: 20px;
+}
+
+.cardcont h2 {
+    margin: 0 0 10px;
+    color: #355c7d;
+    font-size: 22px;
+}
+
+.cardcont p {
+    color: #5d6268;
+    font-size: 16px;
+    line-height: 1.55;
+}
+
+@media (max-width: 640px) {
+    .productos {
+        padding: 20px 16px 36px;
+    }
+
+    .productos > h1 {
+        margin-bottom: 20px;
+        font-size: 28px;
+    }
+
+    .produclista {
+        grid-template-columns: minmax(0, 360px);
+        gap: 18px;
+    }
+}
