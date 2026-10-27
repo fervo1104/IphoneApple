@@ -62,6 +62,85 @@
     line-height: 1.55;
 }
 
+.boton-agregar,
+.carrito-controles button {
+    border: 0;
+    border-radius: 6px;
+    background-color: #355c7d;
+    color: #fff;
+    font: inherit;
+    cursor: pointer;
+}
+
+.boton-agregar {
+    margin-top: 8px;
+    padding: 10px 14px;
+}
+
+.boton-agregar:hover,
+.carrito-controles button:hover {
+    background-color: #294761;
+}
+
+.boton-agregar:focus-visible,
+.carrito-controles button:focus-visible {
+    outline: 2px solid #355c7d;
+    outline-offset: 3px;
+}
+
+.carrito {
+    max-width: 760px;
+    margin: 40px auto 0;
+    padding: 24px;
+    border: 1px solid #e5e4e7;
+    border-radius: 8px;
+    background-color: #f8f9fa;
+    text-align: left;
+}
+
+.carrito h2 {
+    margin: 0 0 16px;
+    color: #355c7d;
+}
+
+.carrito-lista {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.carrito-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #e5e4e7;
+}
+
+.carrito-controles {
+    display: flex;
+    flex-shrink: 0;
+    gap: 8px;
+}
+
+.carrito-controles button {
+    width: 36px;
+    height: 36px;
+    font-size: 20px;
+}
+
+.carrito-total {
+    margin-top: 16px;
+    color: #355c7d;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: right;
+}
+
 @media (max-width: 640px) {
     .productos {
         padding: 20px 16px 36px;
@@ -75,5 +154,15 @@
     .produclista {
         grid-template-columns: minmax(0, 360px);
         gap: 18px;
+    }
+
+    .carrito {
+        padding: 18px;
+    }
+
+    .carrito-item {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 10px;
     }
 }

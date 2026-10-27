@@ -1,0 +1,55 @@
+.contactos {
+  box-sizing: border-box;
+  width: min(100%, 560px);
+  margin: 0 auto;
+  padding: 0 24px 40px;
+  text-align: left;
+}
+
+.contactos h1 {
+  color: #355c7d;
+  font-size: 36px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.contactos form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contactos-campo {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.contactos input,
+.contactos textarea {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #b8c2cc;
+  border-radius: 6px;
+  font: inherit;
+}
+
+.contactos textarea {
+  resize: vertical;
+}
+
+.contactos button {
+  align-self: flex-start;
+  padding: 10px 20px;
+  border: 0;
+  border-radius: 6px;
+  background-color: #355c7d;
+  color: #fff;
+  font: inherit;
+  cursor: pointer;
+}
+
+.contactos button:hover {
+  background-color: #294761;
+}
